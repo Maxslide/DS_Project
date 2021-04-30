@@ -12,7 +12,7 @@ def gen_datetime(min_year=2015, max_year=datetime.now().year):
 # print(str(gen_datetime()).split('.')[0])   
 errors = ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL", "FATAL"]
 user_name = ["Manas", "Jashn", "Anishka", "Viksit", "Anubhav"]
-error_name = ["Authentication Error", "Connection Failed", "OutputCommitter set in config null", "Execution Error", "Proxy Error"]
+error_name = ["Authentication_Error", "Connection_Failed", "OutputCommitter_set_in_config_null", "Execution_Error", "Proxy_Error"]
 i = 0
 with open('check.log','w') as f:
 
@@ -22,6 +22,6 @@ with open('check.log','w') as f:
         i += 1
         if(i%1000000 == 0):
             print(i)
-        if(i > 100000000):
+        if(i > 100000):
             break
 
